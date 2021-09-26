@@ -19,7 +19,8 @@ html{
 .main__second,
 .main__third,
 .main__fourth,
-.main__fiveth {
+.main__fiveth,
+.main__sixth {
     padding: 1.5rem;
     width: 100%;
 }
@@ -91,7 +92,11 @@ html{
 
 /*Experiencia*/
 
-
+.main__fiveth {
+    display: flex;
+    flex-direction: column;
+    
+}
 .main__fiveth div{
     margin: 2rem;
 }
@@ -101,4 +106,17 @@ html{
 }
 
 
+/*Contactame*/
+.main__sixth div{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 1rem;
+    
+
+}
+.main__sixth i {
+    font-size: 2rem;
+    
+}
 
