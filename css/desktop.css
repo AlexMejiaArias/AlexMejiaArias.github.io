@@ -1,0 +1,103 @@
+
+  
+  /*Con esto ni el los ul ni input aparecen */
+  .nav{
+    display: none;
+   
+  }
+
+  .nav__desktop{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      font-size: 2rem;
+      justify-content: space-around;
+      background-color:#760d0d;
+  }
+  .nav__desktop a {
+      text-decoration: none;
+      color: white;
+  }
+
+  .logo{
+  
+    max-width: 15rem;
+    border-radius: 2rem;
+    padding: 1rem;
+  
+  }
+  .nav__desktop li a:hover {
+      cursor: pointer;
+      padding: 2.5rem;
+      background-color: #5a0b0b;
+  }
+
+
+  .main{
+   
+    font-size: 3rem;
+    
+}
+
+
+.main__sixth i {
+    font-size: 3rem;
+    padding: 3rem;
+    width: 50%;
+    flex-grow: 1;
+
+
+    
+}
+
+
+/*Carusel de cursos*/
+.slider {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+  }
+  .slides::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    padding: 1rem;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 40rem;
+    height: 30rem;
+    margin-right: 1rem;
+    background: rgb(193, 204, 200);
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .slides img{
+      width: 25rem;
+      padding: 1rem;
+      border-radius: 2rem;
+  }

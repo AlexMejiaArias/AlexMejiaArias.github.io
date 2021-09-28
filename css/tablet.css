@@ -30,3 +30,23 @@
     width: 60%;
     margin: 1.5rem;
 }
+
+
+/*Contactame*/
+.main__sixth div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    
+
+}
+.main__sixth i {
+    font-size: 2rem;
+    padding-top: 2rem;
+    width: 50%;
+    flex-grow: 1;
+
+
+    
+}
