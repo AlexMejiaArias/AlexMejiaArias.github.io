@@ -1,0 +1,279 @@
+/* Elimando estilos por defecto del mavegador */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2320002c' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 62.5%;
+}
+/* diseños del contenido proncipal */
+
+/* Etilos del logotipo */
+.logo{
+  display: block;
+  margin: 0  auto;
+  max-width: 20rem;
+
+}
+
+
+/*Con esto ni el los ul ni input aparecen */
+ul, input{
+  display: none;
+ 
+}
+
+
+
+label {
+  
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: white;
+  margin-left: 1rem;
+  user-select: none; /*Esto hace que el usuario no pueda seleccionar el contenido*/ 
+}
+
+input:checked  ~ ul{
+  display:flex;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  list-style: none;
+  padding: 5%;
+  font-size: 2.3rem;
+  color: white;
+}
+
+label:hover{
+  cursor: pointer;
+}
+
+.nav li{
+    text-align: center;
+      text-decoration: none;
+      padding: 3%;
+      border-bottom: 0.1rem solid white;
+      width: 100%;
+      color: white;
+}
+
+.nav li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.main__first,
+.main__second,
+.main__third,
+.main__fourth,
+.main__fiveth,
+.main__sixth {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.main__first img{
+  width:100%;
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+}
+
+.main__first h1,
+.main__second h1,
+.main__third h1,
+.main__fourth h1,
+.main__sixth h1{
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: white;
+ border-radius: .5rem;
+ margin-bottom: .5rem;
+
+}
+
+/* 
+codigo para dar fondo blanco para distingir del fondo
+.main__first p,
+.main__second p{
+
+ margin-top: 2rem;
+ background-color:white;
+
+}
+
+.bragWhite{
+ 
+  margin-top: 1rem;
+  background-color:white;
+}
+
+.centerWidth {
+  margin: 0 auto;
+  width: 60%;
+  
+}
+.centerWidth b {
+ font-size: 6rem;
+  
+} */
+
+
+.main__third img {
+    width: 20rem;
+    height: 20rem;
+    
+}
+
+/*Carusel de cursos*/
+.slider {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+   
+
+  }
+  .slides::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    margin: 1.5rem;
+    padding: 1rem;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 30rem;
+    height: auto;
+    margin-right: 1rem;
+    background: rgb(193, 204, 200);
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    
+    
+  }
+  .slides img{
+      width: 23rem;
+      padding: 1rem;
+      border-radius: 2rem;
+  }
+
+ 
+  .slides a {
+      background-color: white;
+      text-decoration: none;
+      padding: .5rem;
+      border-radius: .5rem;
+      margin: .5rem;
+      color: black;
+      font-size: 3rem;
+  }
+
+
+/*Experiencia*/
+.center{
+  margin: 0 auto;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  width: 90%;
+}
+
+.main__fiveth {
+    display: flex;
+    flex-direction: column;
+    
+}
+.main__fiveth div{
+    margin: 2rem;
+}
+.main__fiveth img {
+    width: 80%;
+    height: 15rem;
+    margin: 1.5rem;
+}
+
+
+/*Contactame*/
+.main__sixth div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+
+}
+.main__sixth i {
+    font-size: 2rem;
+    padding-top: 2rem;
+
+    
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    min-height: 10vh;
+    background: #000428; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+
+

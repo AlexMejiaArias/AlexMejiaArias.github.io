@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=giredge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300&display=swap" rel="stylesheet">
+
+    <title>Alexander Mejia</title>
+    <!-- estilos  -->
+    <link rel="stylesheet" href="css/wickedcss.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 600px)">
+
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 800px)">
 </head>
+
 <body>
-    <h1>Iniciando mi WebSite</h1>
+
+    <header>
+        <!-- nav para movil y tablet -->
+        <nav class="nav">
+
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <img class="logo rollerRight" src="img/logo.png" alt="logo">
+
+            <ul class="slideDown ul">
+                <li><a href="#inicio" onclick="esconder()">Inicio</a></li>
+                <li><a href="#sobreMi" onclick="esconder()">Sobre mi</a></li>
+                <li><a href="#estidiosAcademicos" onclick="esconder()">Estudios Académicos</a> </li>
+                <li><a href="#cursosRealizados" onclick="esconder()" >Cursos Realizados</a></li>
+                <li><a href="#experiencia" onclick="esconder()">Experiencia</a> </li>
+                <li><a href="#contactame" onclick="esconder()">Contáctame</a> </li>
+
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="nav__desktop">
+                <li><img class="logo rollerRight" src="img/logo.png" alt="logo"></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#estidiosAcademicos">Estudios Académicos</a> </li>
+                <li><a href="#cursosRealizados">Cursos Realizados</a></li>
+                <li><a href="#experiencia">Experiencia</a> </li>
+                <li><a href="#contactame">Contáctame</a> </li>
+
+            </ul>
+        </nav>
+
+       
+       
+    </header>
+ 
+
+    <main class="main">
+        <div class="main__first">
+            <h1  class="floater" id="inicio" >Hola, Bienvenido a mi WebSite!!</h1>
+            <img class="zoomer" src="img/me.jpg"
+                alt="">
+        </div>
+
+        <div class="main__second">
+            <h1 class="floater" id="sobreMi" >Sobre mí</h1>
+            <p class="zoomer">
+                Soy Alexander, Desarrollador de Software y entusiasta por este mundo de la tecnología y la programación. Te doy la bienvenida a mi WebSite donde podrás conocer todo sobre mi preparación, mis onocimientos, habilidades y más...
+            </p>
+        </div>
+
+        <div class="main__third">
+            <h1 class="floater" id="estidiosAcademicos">Estudios Académicos</h1>
+            <img class="zoomer" src="https://image.flaticon.com/icons/png/512/42/42972.png" alt="gorro graduado">
+            <div class="bragWhite centerWidth">
+                <p>Instituto Superior Tecnológico Benito Juárez</p>
+                <p>Tecnología en Desarrollo de Software </p>
+             <b>100%</b>
+             </div>
+
+        </div>
+
+        <div class="main__fourth">
+            <h1 class="floater" id="cursosRealizados">Cursos realizados</h1>
+            <div class="slider zoomer">
+
+
+                <div class="slides">
+
+                    <div id="slide-1">
+                        <h4>Curso Profesional de Base de Datos</h4>
+                        <img src="https://i.ibb.co/M1gjNjX/Curso-Profesional-de-base-de-datos.png" alt="">
+                        <a href="https://drive.google.com/file/d/12hxLAFgfI0FtvsYDgn4WrRrNv_MYnpS8/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+
+                    <div id="slide-1">
+                        <h4>Curso de PreWork en Windows</h4>
+                        <img src="https://i.ibb.co/3ymGjKS/curso-de-prework.png" alt="">
+                        <a href="https://drive.google.com/file/d/12gY17ACW3K3M9Wc-I4r_u98V7kA6ZJEY/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+
+
+                    <div id="slide-1">
+                        <h4>JavaScript 2020: De principiante a experto</h4>
+                        <img src="https://i.ibb.co/GsTM0hZ/javascript-2020.png" alt="">
+                        <a href="https://drive.google.com/file/d/12y8REH3bH9i5uvohwWJHkfkf_iFhTZVI/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+
+                    <div id="slide-1">
+                        <h4>Curso Profesional de PHP</h4>
+                        <img src= "https://i.ibb.co/r2knhFz/curso-profesional-de-php.png" alt="">
+                        <a href="https://drive.google.com/file/d/12l5o6_3EmHJXo21LALaotV0pMxppmuTg/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+
+                    <div id="slide-1">
+                        <h4>Curso básico de algoritmos y pensamiento lógico</h4>
+                        <img src=" https://i.ibb.co/Kjjm85c/curso-basico-de-algoritmos-y-pensamiento-logico.png" alt="">
+                        <a href="https://drive.google.com/file/d/12y2gXcgdTTvf7kDoNmlAQULacTNsbTwI/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+
+                    <div id="slide-1">
+                        <h4>Introducción a la terminal y línea de comandos</h4>
+                        <img src= "https://i.ibb.co/Dt6LNKs/introducion-a-la-terminal-y-linea-de-comandos.png" alt="">
+                        <a href="https://drive.google.com/file/d/12wMnzlzK9d1Wmpmi-GPKToDgmq2k0t8U/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+
+                    <div id="slide-1">
+                        <h4>Curso definitivo de HTML y CSS</h4>
+                        <img src= "https://i.ibb.co/3BC0ch0/curso-definitivo-de-html-y-css.png" alt="">
+                        <a href="https://drive.google.com/file/d/1ImByAxNGH-LgdZvRJ1mUuhR4jqLoQ2Fx/view?usp=sharing"  target="_blank">ver certificado</a>
+
+                    </div>
+                    
+                   
+                </div>
+            </div>
+
+        </div>
+       
+       
+        <h1 class="center floater" id="experiencia">Experiencia</h1>
+        <div class="main__fiveth zoomer">
+            
+
+            <div>
+                <h3 class="bragWhite">Fundacion Esquel</h3>
+                <img src="https://lh3.googleusercontent.com/proxy/yrLnGlc9nERtuKE61W8eOuIh_skk1oGd0fHUN1ankhJhx8po3__6vLv12xTublo0bbmPiCsFvV8vY0dIzZuieTEs95LpPUzZ5KZUpe6A6jAhoskH5jlOjnqQKGYo0GXFGqSDJdjwhKoimiIvyorIbiJv75TET68t"
+                    alt="">
+                <p class="bragWhite">Implementacion de Moodle para el aprendizaje virtual y manejor de servidores Liunx(Ubuntu server). <a href="https://eva.esquel.org.ec/" target="_blank">Visitar web</a> </p>
+            </div>
+
+            <div>
+                <h3 class="bragWhite">Universidad de las fuerzas armadas ESPE</h3>
+                <img src="https://www.espe.edu.ec/wp-content/uploads/2021/06/LOGOESPE99.png"
+                    alt="">
+                <p class="bragWhite">Practicas pre profesionales de Desarrollo de Software por 3 meses <a href="https://drive.google.com/file/d/12_sDIc_eJZW9dwXTEelFJOpMwlwlX4gM/view?usp=sharing" target="_blank">ver certificado</a></p>
+            </div>
+
+            
+        </div>
+
+        <div class="main__sixth">
+            <h1 class="floater" id="contactame">Contactame</h1>
+            <p class="bragWhite">Puedes contactarme por cuaquiera de estos medios:</p>
+            <div class="zoomer bragWhite">
+            
+                <i class="fab fa-whatsapp-square"><a href="https://wa.me/+593984416470/?text=Hola,%20quiero%20solitar%20tus%20servios" target="_blank">+593984416470</a> </i>
+                <i class="fas fa-envelope-square">alex.mejia.arias@gmail.com</i>
+                <i class="fab fa-github"><a href="https://github.com/AlexMejiaArias" target="_blank">AlexMejiaArias</a></i>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>Creado por Alexander Mejía - 2021</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
