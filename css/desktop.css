@@ -12,7 +12,9 @@
       align-items: center;
       font-size: 2rem;
       justify-content: space-around;
-      background-color:#760d0d;
+      background: #000428; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   .nav__desktop a {
       text-decoration: none;
@@ -29,7 +31,7 @@
   .nav__desktop li a:hover {
       cursor: pointer;
       padding: 2.5rem;
-      background-color: #5a0b0b;
+      background-color:#000428;
   }
 
 
@@ -39,6 +41,10 @@
     
 }
 
+.main__first img{
+  width:90%;
+
+}
 
 .main__sixth i {
     font-size: 3rem;
